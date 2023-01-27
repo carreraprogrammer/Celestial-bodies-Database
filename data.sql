@@ -47,3 +47,20 @@ VALUES ('Sun', 1, 'A G-type main-sequence star located in the Milky Way galaxy',
        ('Pollux', 17, 'An orange giant star located in the Maffei 2 galaxy', false, true),
        ('47 Tucanae', 18, 'A globular cluster located in the Large Magellanic Cloud galaxy', false, false),
        ('NGC 292', 19, 'An open cluster located in the Small Magellanic Cloud galaxy', false, false);
+
+/* Insert data into planet table */
+
+INSERT INTO planet (name, description, number_of_moons, star_id)
+VALUES
+  ('Earth', 'The third planet from the sun', 1, 1),
+  ('Mars', 'The fourth planet from the sun', 2, 1),
+  ('Proxima b', 'A planet orbiting Proxima Centauri', 0, 2),
+  ('Alpha Centauri bb', 'A planet orbiting Alpha Centauri B', 0, 4),
+  ('Betelgeuse b', 'A planet orbiting Betelgeuse', 0, 5),
+  ('Jupiter', 'The fifth planet from the sun', 67, 1),
+  ('Saturn', 'The sixth planet from the sun', 62, 1),
+  ('Uranus', 'The seventh planet from the sun', 27, 1),
+  ('Neptune', 'The eighth planet from the sun', 14, 1),
+  ('Alpha Centauri Ab', 'A planet orbiting Alpha Centauri A', 0, 3),
+  ('Antares b', 'A planet orbiting Antares', 0, 6),
+  ('Deneb b', 'A planet orbiting Deneb', 0, 7);
