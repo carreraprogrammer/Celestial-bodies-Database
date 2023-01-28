@@ -24,3 +24,14 @@ has_life BOOLEAN,
 is_spherical BOOLEAN,
 FOREIGN KEY (galaxy_id) REFERENCES galaxy(galaxy_id) ON DELETE CASCADE
 );
+
+/* planet's table */
+
+CREATE TABLE planet (
+    planet_id SERIAL PRIMARY KEY,
+    name VARCHAR(200),
+    description TEXT,
+    number_of_moons INTEGER,
+    star_id INTEGER,
+    FOREIGN KEY (star_id) REFERENCES star(star_id)
+);
