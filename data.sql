@@ -88,3 +88,11 @@ VALUES ('Moon', 1, 'Earth''s only natural satellite'),
        ('Helene', 7, 'A Saturnian moon'),
        ('Telesto', 7, 'A Saturnian moon'),
        ('Calypso', 7, 'A Saturnian moon');
+
+/* Join table between moon and planet */
+
+CREATE TABLE moon_planet (
+  moon_id INTEGER REFERENCES moon(moon_id) ON DELETE CASCADE,
+  planet_id INTEGER REFERENCES planet(planet_id) ON DELETE CASCADE,
+  PRIMARY KEY (moon_id, planet_id)
+);
