@@ -35,3 +35,12 @@ CREATE TABLE planet (
     star_id INTEGER,
     FOREIGN KEY (star_id) REFERENCES star(star_id)
 );
+
+/* Moon table */
+
+CREATE TABLE moon (
+    moon_id SERIAL PRIMARY KEY,
+    name VARCHAR(200),
+    planet_id INTEGER REFERENCES planet(planet_id) ON DELETE CASCADE,
+    description TEXT
+);

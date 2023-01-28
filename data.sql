@@ -63,3 +63,28 @@ VALUES ('Earth', 'The third planet from the sun', 1, 1),
        ('Alpha Centauri Ab', 'A planet orbiting Alpha Centauri A', 0, 3),
        ('Antares b', 'A planet orbiting Antares', 0, 6),
        ('Deneb b', 'A planet orbiting Deneb', 0, 7);
+
+
+/* Insert data into moon table */
+
+INSERT INTO moon (name, planet_id, description)
+VALUES ('Moon', 1, 'Earth''s only natural satellite'),
+       ('Phobos', 2, 'A Martian moon'),
+       ('Deimos', 2, 'A Martian moon'),
+       ('Triton', 9, 'A Neptunian moon'),
+       ('Europa', 6, 'A Jovian moon'),
+       ('Ganymede', 6, 'A Jovian moon'),
+       ('Io', 6, 'A Jovian moon'),
+       ('Callisto', 6, 'A Jovian moon'),
+       ('Titan', 7, 'A Saturnian moon'),
+       ('Rhea', 7, 'A Saturnian moon'),
+       ('Iapetus', 7, 'A Saturnian moon'),
+       ('Tethys', 7, 'A Saturnian moon'),
+       ('Dione', 7, 'A Saturnian moon'),
+       ('Enceladus', 7, 'A Saturnian moon'),
+       ('Mimas', 7, 'A Saturnian moon'),
+       ('Hyperion', 7, 'A Saturnian moon'),
+       ('Ijiraq', 7, 'A Saturnian moon'),
+       ('Helene', 7, 'A Saturnian moon'),
+       ('Telesto', 7, 'A Saturnian moon'),
+       ('Calypso', 7, 'A Saturnian moon');
