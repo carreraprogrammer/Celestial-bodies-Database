@@ -44,3 +44,13 @@ CREATE TABLE moon (
     planet_id INTEGER REFERENCES planet(planet_id) ON DELETE CASCADE,
     description TEXT
 );
+
+/* System table */
+
+CREATE TABLE system (
+    system_id SERIAL PRIMARY KEY,
+    name VARCHAR(200),
+    galaxy_id INTEGER REFERENCES galaxy(galaxy_id),
+    description TEXT,
+    number_of_planets INTEGER
+);

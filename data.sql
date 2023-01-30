@@ -89,10 +89,11 @@ VALUES ('Moon', 1, 'Earth''s only natural satellite'),
        ('Telesto', 7, 'A Saturnian moon'),
        ('Calypso', 7, 'A Saturnian moon');
 
-/* Join table between moon and planet */
+/* Insert data into system */
 
-CREATE TABLE moon_planet (
-  moon_id INTEGER REFERENCES moon(moon_id) ON DELETE CASCADE,
-  planet_id INTEGER REFERENCES planet(planet_id) ON DELETE CASCADE,
-  PRIMARY KEY (moon_id, planet_id)
-);
+INSERT INTO system (system_id, name, galaxy_id, description, number_of_planets)
+VALUES (1, 'Solar System', 1, 'The system that contains our planet Earth', 1),
+       (2, 'Alpha Centauri', 2, 'The nearest star system to Earth', 3),
+       (3, 'Barnard''s Star', 2, 'A red dwarf located 6 light years from Earth', 0),
+       (4, 'Tau Ceti', 2, 'A sun-like star located 12 light years from Earth', 5),
+       (5, 'VY Canis Majoris', 4, 'A red hypergiant located 5,000 light years from Earth', 100);
